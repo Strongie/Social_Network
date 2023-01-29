@@ -24,6 +24,13 @@ const userSchema = new Schema(
         ref: 'user'
       },
       ],
-    });
+    },
+    {
+      toJSON: {
+        getters: true,
+          },
+          id: false,
+        }
+    );
 
 module.exports = userSchema

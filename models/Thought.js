@@ -19,6 +19,13 @@ const thoughtSchema = new Schema(
     },
     ],
     reactions: [reactionSchema],
+  },
+  {
+    toJSON: {
+      getters: true,
+        },
+        id: false,
+      
     });
 
 module.exports = thoughtSchema
