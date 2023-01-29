@@ -1,5 +1,5 @@
 const { Schema, Types } = require('mongoose');
-const reactionsSchema = require('./Reaction');
+const reactionSchema = require('./Reaction');
 
 const thoughtSchema = new Schema(
   {
@@ -18,7 +18,7 @@ const thoughtSchema = new Schema(
       required: true,
     },
     ],
-    reactions: [reactionsSchema],
+    reactions: [reactionSchema],
     });
 
 module.exports = thoughtSchema
